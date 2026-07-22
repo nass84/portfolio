@@ -883,6 +883,12 @@
 .cs-mock-tag.ok { background: #e6f0ec; color: #065f46; }
 .cs-mock-tag.no { background: var(--cream); color: var(--coral); }
 
+/* ── Embedded presentation / iframe ── */
+.cs-embed { margin: 32px 0; }
+.cs-embed iframe { border-radius: var(--radius-lg); }
+.cs-embed figcaption { font-size: 14px; text-align: center; margin-top: 12px; }
+.cs-embed figcaption a { color: var(--coral); font-weight: 600; }
+
 /* ── Photo figure ── */
 .cs-photo { margin: 32px 0; }
 .cs-photo img,
