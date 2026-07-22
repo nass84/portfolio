@@ -603,7 +603,7 @@ nav {
   overflow: hidden;
   background: var(--cream);
   border-bottom: 2px solid var(--border);
-  aspect-ratio: 16 / 10;
+  height: 150px;
 }
 
 .build-shot img {
@@ -617,26 +617,26 @@ nav {
 .build-card:hover .build-shot img { transform: scale(1.03); }
 
 .build-info {
-  padding: 24px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   flex: 1;
 }
 
 .build-trade {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 10px 14px;
+  gap: 1px;
+  padding: 7px 11px;
   background: var(--cream);
   border-left: 3px solid var(--coral);
   border-radius: var(--radius);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .build-trade-label {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -644,28 +644,28 @@ nav {
 }
 
 .build-trade-value {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--navy);
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .build-info h3 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--navy);
   line-height: 1.2;
 }
 
 .build-info p {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.55;
   flex: 1;
 }
 
 .build-link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--coral);
   transition: color 0.2s;
@@ -673,8 +673,8 @@ nav {
 
 .build-card:hover .build-link { color: var(--navy); }
 
-@media (max-width: 900px) {
-  .builds-grid { grid-template-columns: 1fr 1fr; }
+@media (max-width: 640px) {
+  .builds-grid { grid-template-columns: 1fr; }
 }
 
 /* ══ SPEAKING — clean list ══ */
@@ -1115,7 +1115,6 @@ footer {
 
   .about, .speaking, .reviews, .contact, .builds { padding: 56px 24px; }
   .builds-inner h2 { font-size: 30px; }
-  .builds-grid { grid-template-columns: 1fr; }
   .about-content p { font-size: 17px; }
   .about-main { grid-template-columns: 1fr; }
   .about-award-image { width: 200px; justify-self: center; }
