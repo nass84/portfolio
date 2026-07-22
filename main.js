@@ -1,3 +1,21 @@
+// ── Enable JS-only enhancements (guards reveal so no-JS keeps content visible) ──
+document.documentElement.classList.add('js');
+
+// ── Scroll reveal ──
+const revealEls = document.querySelectorAll('.reveal');
+if (revealEls.length) {
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('in'));
+  }
+}
+
 // ── Mobile nav toggle ──
 const toggle = document.querySelector('.nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
