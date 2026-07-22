@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MATCH: AI-Powered Homelessness Accommodation Matching – Case Study | Becki Floyd</title>
-  <meta name="description" content="How a 48-hour hackathon became a winning prototype — researched with people who've experienced homelessness, presented to MPs in Parliament." />
+  <title>MATCH: AI-powered homelessness accommodation matching – Case study | Becki Floyd</title>
+  <meta name="description" content="How a 48-hour hackathon became a working prototype, researched with people who've experienced homelessness, presented to MPs in Parliament, and built for a system long overdue a rethink." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="case-study.css" />
 </head>
 <body>
+
+<div class="cs-bar"></div>
 
 <nav id="nav">
   <a href="/" class="nav-logo">Becki Floyd</a>
@@ -28,10 +30,16 @@
 <article class="case-study">
   <header class="cs-header">
     <a href="/#work" class="cs-back">&larr; Back to work</a>
-    <div class="cs-eyebrow"><span class="cs-dot" style="background:#0F6E56"></span> Case study &middot; Gov.uk Hackathon</div>
-    <h1>MATCH: AI-powered<br>homelessness accommodation<br>matching</h1>
-    <p class="cs-subtitle">How a 48-hour hackathon became a working prototype — researched with people who've experienced homelessness, presented to MPs in Parliament, and built for a system that was long overdue a rethink.</p>
+    <div class="cs-eyebrow"><span class="cs-dot"></span> Case study &middot; Gov.uk Hackathon</div>
+    <h1>MATCH: AI-powered homelessness accommodation matching</h1>
+    <p class="cs-subtitle">How a 48-hour hackathon became a working prototype, researched with people who've experienced homelessness, presented to MPs in Parliament, and built for a system that was long overdue a rethink.</p>
   </header>
+
+  <div class="cs-stat-strip reveal">
+    <div class="cs-stat"><div class="cs-stat-num">12k</div><div class="cs-stat-lab">Officer hours a year on manual matching</div></div>
+    <div class="cs-stat"><div class="cs-stat-num">7.3</div><div class="cs-stat-lab">Full-time staff consumed by matching alone</div></div>
+    <div class="cs-stat"><div class="cs-stat-num">48h</div><div class="cs-stat-lab">To build a working prototype</div></div>
+  </div>
 
   <div class="cs-meta">
     <div class="cs-meta-item">
@@ -48,93 +56,66 @@
     </div>
     <div class="cs-meta-item">
       <div class="cs-meta-label">Disciplines</div>
-      <div class="cs-meta-value">Service Design &middot; User Research &middot; Prototype Testing &middot; AI Product</div>
+      <div class="cs-meta-value">Service design &middot; User research &middot; Prototype testing &middot; AI product</div>
     </div>
   </div>
 
-  <div class="cs-jump-nav">
-    <a href="#why">Why I joined</a>
-    <a href="#problem">The problem</a>
-    <a href="#solution">The solution</a>
-    <a href="#contribution">My contribution</a>
-    <a href="#research">User research</a>
-    <a href="#outcome">Outcome</a>
-  </div>
-
-  <div class="cs-tldr">
+  <div class="cs-tldr reveal">
     <div class="cs-tldr-label">The short version</div>
     <ul>
-      <li>Won the Gov.uk Homeless Hackathon with an AI-powered accommodation matching prototype</li>
-      <li>Replaced a 2-hour manual matching process with a 4-step AI-assisted workflow</li>
-      <li>Conducted user research with people who've experienced homelessness, service users, and caseworkers</li>
-      <li>Presented the solution to MPs in Parliament three months after winning</li>
+      <li>Won the Gov.uk Homeless Hackathon with an AI-powered accommodation matching prototype.</li>
+      <li>Replaced a two-hour manual matching process with a four-step AI-assisted workflow.</li>
+      <li>Conducted user research with people who've experienced homelessness, service users and caseworkers.</li>
+      <li>Presented the solution to MPs in Parliament three months after winning.</li>
     </ul>
+  </div>
+
+  <div class="cs-process reveal">
+    <div class="cs-process-label">My process</div>
+    <p>I lead with research and design around the people who'll actually use the thing. On MATCH that meant grounding every decision in understanding officers and households first, then speaking to three distinct groups once we'd won, so the prototype improved from real experience rather than assumptions. Where AI did the heavy lifting, I kept the human in control by design.</p>
   </div>
 
   <div class="cs-content">
 
-    <!-- WHY I JOINED -->
-    <section class="cs-section" id="why">
+    <section class="cs-section reveal" id="why">
       <div class="cs-sec-label"><span class="cs-sec-num">1</span> Why I joined</div>
       <h2>This one was personal before it was professional</h2>
-      <p>Before moving into tech, I spent years at Citizens Advice working directly with people experiencing homelessness. I understood the system's failures from the inside: the endless form-filling, the mis-entries, the placements that made a crisis worse. When I heard about a government hackathon to tackle homelessness through AI, joining wasn't a career decision. It was an obvious one.</p>
-      <p>The brief was open: use AI to make a meaningful difference in housing. We chose to focus on temporary accommodation matching — a critical, high-stakes process that was still largely manual, and failing people because of it.</p>
+      <p class="cs-lead">Before moving into tech, I spent years at Citizens Advice working directly with people experiencing homelessness.</p>
+      <p>I understood the system's failures from the inside, so the endless form-filling, the mis-entries, the placements that made a crisis worse. When I heard about a government hackathon to tackle homelessness through AI, joining wasn't a career decision, it was an obvious one. The brief was open, use AI to make a meaningful difference in housing, and we chose to focus on temporary accommodation matching, a critical, high-stakes process that was still largely manual and failing people because of it.</p>
     </section>
 
-    <hr class="cs-divider" />
-
-    <!-- THE PROBLEM -->
-    <section class="cs-section" id="problem">
+    <section class="cs-section reveal" id="problem">
       <div class="cs-sec-label"><span class="cs-sec-num">2</span> The problem</div>
       <h2>12,000 officer hours. Still producing bad matches.</h2>
-      <p>Based on Sheffield City Council's data, councils handle around 6,000 accommodation matches per year. Each manual match takes roughly two hours: pulling together needs assessments, checking property records, cross-referencing risk information. That's 12,000 officer hours annually — the equivalent of 7.3 full-time staff — just on matching.</p>
-      <p>And it still goes wrong. Risk data gets mis-entered. Properties get assigned that are unsuitable or unsafe. Officers start again. Every failure costs time the system doesn't have, and puts a vulnerable person — often a family in crisis — in the wrong place.</p>
-
-      <div class="outcome-row">
-        <div class="outcome-stat" style="border-color: #0F6E56">
-          <div class="outcome-big" style="color:#0F6E56">12k</div>
-          <div class="outcome-label">Officer hours per year on manual matching (Sheffield benchmark)</div>
-        </div>
-        <div class="outcome-stat" style="border-color: #0F6E56">
-          <div class="outcome-big" style="color:#0F6E56">7.3</div>
-          <div class="outcome-label">Full-time staff equivalent consumed by matching alone</div>
-        </div>
-        <div class="outcome-stat" style="border-color: #0F6E56">
-          <div class="outcome-big" style="color:#0F6E56">48h</div>
-          <div class="outcome-label">To build a working prototype that addresses both</div>
-        </div>
-      </div>
+      <p class="cs-lead">Councils handle around 6,000 accommodation matches a year, and each manual match takes roughly two hours.</p>
+      <p>Based on Sheffield City Council's data, that means pulling together needs assessments, checking property records and cross-referencing risk information, over and over. It adds up to 12,000 officer hours annually, the equivalent of 7.3 full-time staff, just on matching. And it still goes wrong. Risk data gets mis-entered, properties get assigned that are unsuitable or unsafe, and officers start again. Every failure costs time the system doesn't have, and puts a vulnerable person, often a family in crisis, in the wrong place.</p>
     </section>
 
-    <!-- THE HUMAN COST -->
-    <section class="cs-section">
+    <section class="cs-section reveal" id="human-cost">
       <div class="cs-sec-label"><span class="cs-sec-num">3</span> The human cost</div>
       <h2>What a bad match looks like in practice</h2>
 
       <div class="story-block">
-        <div class="story-header">Composite case — based on real experiences</div>
+        <div class="story-header">Composite case, based on real experiences</div>
         <div class="story-body">
-          <p>Shaheen arrived at the council at 9am with her three children, fleeing domestic violence. By 1:30pm she'd been offered a property 3 miles from her danger zone — because risk data had been mis-entered. The match was unsafe.</p>
-          <p>Back to searching. By 3pm a second option: 45 minutes from her support network, 90 minutes from her children's schools. When she arrived, it was a B&amp;B housing adult men.</p>
-          <p>She called the out-of-hours line. No alternatives. <strong>She paid for a hotel that night herself.</strong></p>
-          <p>This isn't an edge case. It's what the system produces when it's under pressure and running on manual processes. The cost isn't just financial — every bad match is a family in the wrong place at the worst possible moment.</p>
+          <p>Shaheen arrived at the council at 9am with her three children, fleeing domestic violence. By 1:30pm she'd been offered a property three miles from her danger zone, because risk data had been mis-entered. The match was unsafe.</p>
+          <p>Back to searching. By 3pm a second option came up, 45 minutes from her support network and 90 minutes from her children's schools. When she arrived, it was a B&amp;B housing adult men. She called the out-of-hours line, there were no alternatives, and <strong>she paid for a hotel that night herself.</strong></p>
+          <p>This isn't an edge case, it's what the system produces when it's under pressure and running on manual processes. The cost isn't just financial, since every bad match is a family in the wrong place at the worst possible moment.</p>
         </div>
       </div>
     </section>
 
-    <hr class="cs-divider" />
-
-    <!-- THE SOLUTION -->
-    <section class="cs-section" id="solution">
+    <section class="cs-section reveal" id="solution">
       <div class="cs-sec-label"><span class="cs-sec-num">4</span> The solution</div>
       <h2>Four steps to replace a two-hour manual process</h2>
-      <p>MATCH replaces the manual workflow with a four-stage AI-assisted process. Crucially, it keeps the officer in control at every step — AI handles the information processing, humans make the placement decision.</p>
+      <p class="cs-lead">MATCH replaces the manual workflow with a four-stage AI-assisted process, keeping the officer in control at every step.</p>
+      <p>AI handles the information processing while humans make the placement decision.</p>
 
       <div class="flow-grid">
         <div class="flow-step">
           <div class="flow-num">01</div>
           <h4>Voice recording</h4>
-          <p>Officer records the needs assessment verbally. No forms. Natural conversation.</p>
+          <p>Officer records the needs assessment verbally. No forms, natural conversation.</p>
         </div>
         <div class="flow-step">
           <div class="flow-num">02</div>
@@ -149,122 +130,92 @@
         <div class="flow-step">
           <div class="flow-num">04</div>
           <h4>Officer review</h4>
-          <p>Ranked results with reasoning. Officer makes the final call with full context.</p>
+          <p>Ranked results with reasoning. The officer makes the final call with full context.</p>
         </div>
       </div>
 
-      <div class="callout" style="border-left-color:#0F6E56">
-        <p>The matching uses a weighted scoring algorithm — deliberately interpretable and transparent rather than a machine learning model. That matters for trust, for auditability, and for explaining decisions to households and officers.</p>
+      <div class="callout">
+        <p>The matching uses a weighted scoring algorithm, deliberately interpretable and transparent rather than a machine learning model. That matters for trust, for auditability, and for explaining decisions to households and officers.</p>
         <div class="callout-src">Technical decision, hackathon documentation</div>
       </div>
     </section>
 
-    <hr class="cs-divider" />
-
-    <!-- MY CONTRIBUTION -->
-    <section class="cs-section" id="contribution">
+    <section class="cs-section reveal" id="contribution">
       <div class="cs-sec-label"><span class="cs-sec-num">5</span> My contribution</div>
       <h2>Design decisions I owned</h2>
-      <p>As the UX designer on the team, my role was to make sure the prototype was built around the people who'd actually use it — not just technically functional. That meant driving the design decisions and leading the user research.</p>
+      <p class="cs-lead">As the UX designer on the team, my job was to make sure the prototype was built around the people who'd actually use it, not just technically functional.</p>
 
-      <div class="skill-table">
-        <div class="skill-row skill-row--header">
-          <div class="skill-cell">Decision</div>
-          <div class="skill-cell">Reasoning</div>
+      <div class="cs-rows">
+        <div class="cs-row">
+          <div class="cs-row-head">Voice recording instead of forms</div>
+          <div class="cs-row-body">Officers already do verbal assessments, so recording captures the natural conversation rather than forcing a new behaviour.</div>
         </div>
-        <div class="skill-row">
-          <div class="skill-cell"><strong>Voice recording instead of forms</strong></div>
-          <div class="skill-cell">Officers already do verbal assessments. Recording captures the natural conversation rather than forcing a new behaviour.</div>
+        <div class="cs-row">
+          <div class="cs-row-head">Weighted algorithm, not an ML model</div>
+          <div class="cs-row-body">Interpretable decisions build trust, and officers need to explain placements to households, which a black box makes impossible.</div>
         </div>
-        <div class="skill-row">
-          <div class="skill-cell"><strong>Weighted algorithm, not ML model</strong></div>
-          <div class="skill-cell">Interpretable decisions build trust. Officers need to explain placements to households — a black box makes that impossible.</div>
+        <div class="cs-row">
+          <div class="cs-row-head">Officer makes the final placement</div>
+          <div class="cs-row-body">The system removes the processing work, not the human judgement, which is critical for safeguarding and accountability.</div>
         </div>
-        <div class="skill-row">
-          <div class="skill-cell"><strong>Officer makes the final placement</strong></div>
-          <div class="skill-cell">The system removes the processing work, not the human judgement. Critical for safeguarding and accountability.</div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-cell"><strong>Ranked results with reasoning shown</strong></div>
-          <div class="skill-cell">Officers need to understand why a property was ranked highly, not just that it was. Transparency reduces errors and builds confidence.</div>
+        <div class="cs-row">
+          <div class="cs-row-head">Ranked results with reasoning shown</div>
+          <div class="cs-row-body">Officers need to understand why a property was ranked highly, not just that it was, and transparency reduces errors and builds confidence.</div>
         </div>
       </div>
     </section>
 
-    <hr class="cs-divider" />
-
-    <!-- USER RESEARCH -->
-    <section class="cs-section" id="research">
+    <section class="cs-section reveal" id="research">
       <div class="cs-sec-label"><span class="cs-sec-num">6</span> User research</div>
-      <h2>We won the hackathon — then started the real work</h2>
-      <p>Winning was the beginning, not the end. Before making any further improvements to the prototype, I insisted on proper user research. Voxpopme gave us access to their platform for free, which let us speak to three distinct groups — something most hackathon projects never do.</p>
+      <h2>We won the hackathon, then started the real work</h2>
+      <p class="cs-lead">Winning was the beginning, not the end. Before improving the prototype, I insisted on proper user research.</p>
+      <p>Voxpopme gave us access to their platform for free, which let us speak to three distinct groups, something most hackathon projects never do.</p>
 
       <div class="research-grid">
         <div class="research-card">
           <div class="research-group">Group 1</div>
           <h4>People with lived experience of homelessness</h4>
-          <p>Understanding the emotional reality of the matching process from the household's perspective. What felt dehumanising. What built trust. What they needed officers to know.</p>
+          <p>Understanding the emotional reality of the matching process from the household's perspective. What felt dehumanising, what built trust, what they needed officers to know.</p>
         </div>
         <div class="research-card">
           <div class="research-group">Group 2</div>
           <h4>Local authority service users</h4>
-          <p>People who had navigated the council housing system. Their experiences shaped our understanding of where the process breaks down in practice.</p>
+          <p>People who had navigated the council housing system, whose experiences shaped our understanding of where the process breaks down in practice.</p>
         </div>
         <div class="research-card">
           <div class="research-group">Group 3</div>
           <h4>Frontline caseworkers</h4>
-          <p>The primary users of the tool. Their feedback on the prototype was direct and practical — and shaped improvements in the next iteration.</p>
+          <p>The primary users of the tool. Their feedback on the prototype was direct and practical, and shaped improvements in the next iteration.</p>
         </div>
       </div>
 
-      <div class="callout" style="border-left-color:#0F6E56">
-        <p>Caseworkers told us the prototype could remove the parts of the job that ate their time without adding value — the cross-referencing, the data entry, the re-searching after a failed match. They wanted to spend that time with the people in front of them, not in spreadsheets.</p>
-        <div class="callout-src">Caseworker feedback, prototype testing session</div>
-      </div>
+      <p class="pull-quote">Caseworkers wanted the prototype to remove the parts of the job that ate their time without adding value, the cross-referencing, the data entry, the re-searching after a failed match. They wanted to spend that time with the people in front of them, not in spreadsheets.</p>
     </section>
 
-    <hr class="cs-divider" />
-
-    <!-- OUTCOME -->
-    <section class="cs-section" id="outcome">
+    <section class="cs-section reveal" id="outcome">
       <div class="cs-sec-label"><span class="cs-sec-num">7</span> Outcome</div>
       <h2>From hackathon to Parliament</h2>
-      <p>The prototype won the government hackathon outright. Three months later I presented it to MPs in Parliament — standing up to explain both the problem and what we'd built, to an audience that could actually act on it.</p>
-      <p>That required a different kind of design work: translating a technical prototype into a narrative that landed for a policy audience. I wrote the full presentation structure, speaker notes for a 13-slide deck, and the video research intro script.</p>
+      <p class="cs-lead">The prototype won the government hackathon outright. Three months later I presented it to MPs in Parliament.</p>
+      <p>Standing up to explain both the problem and what we'd built, to an audience that could actually act on it, required a different kind of design work: translating a technical prototype into a narrative that landed for a policy audience. I wrote the full presentation structure, speaker notes for a 13-slide deck and the video research intro script.</p>
 
       <div class="award-block">
-        <div class="award-icon">
-          <svg viewBox="0 0 18 18" fill="none" width="18" height="18"><path d="M9 2l1.8 3.6L15 6.3l-3 2.9.7 4.1L9 11.4l-3.7 1.9.7-4.1L3 6.3l4.2-.7L9 2z" stroke="#0F6E56" stroke-width="1.4" stroke-linejoin="round"/></svg>
-        </div>
-        <div>
-          <h4>Gov.uk Hackathon — First Place</h4>
-          <p>Competing against multidisciplinary teams from across government and the third sector. MATCH was selected as the standout prototype for its combination of technical rigour, genuine user insight, and real-world applicability.</p>
-        </div>
+        <h4>Gov.uk Hackathon, First Place</h4>
+        <p>Competing against multidisciplinary teams from across government and the third sector, MATCH was selected as the standout prototype for its combination of technical rigour, genuine user insight and real-world applicability.</p>
       </div>
-
       <div class="award-block">
-        <div class="award-icon">
-          <svg viewBox="0 0 18 18" fill="none" width="18" height="18"><rect x="3" y="4" width="12" height="10" rx="1.5" stroke="#0F6E56" stroke-width="1.4"/><path d="M6 2v3M12 2v3M3 9h12" stroke="#0F6E56" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </div>
-        <div>
-          <h4>Presented to MPs, Parliament — March 2026</h4>
-          <p>Invited to present the prototype to Members of Parliament as part of the government's commitment to reviewing solutions from the hackathon cohort. The first time the MATCH prototype had a direct line to policy decision-makers.</p>
-        </div>
+        <h4>Presented to MPs, Parliament, March 2026</h4>
+        <p>Invited to present the prototype to Members of Parliament as part of the government's commitment to reviewing solutions from the hackathon cohort, the first time MATCH had a direct line to policy decision-makers.</p>
       </div>
     </section>
 
-    <!-- REFLECTION -->
-    <div class="dark-box" style="background:#0a1f16">
-      <h3 style="color:#c5edd9">What I took from this</h3>
-      <p style="color:#7dc4a8">The projects that matter most are rarely the ones that start with a clean brief and a full team. MATCH started in 48 hours with people I'd never met, solving a problem I cared about long before I worked in tech.</p>
-      <p style="color:#7dc4a8">The design decisions that held up under scrutiny — voice recording, interpretable algorithms, officer control — weren't clever ideas. They came directly from understanding the people using the system. The research we did after winning mattered as much as anything built during the hackathon itself.</p>
-      <p style="color:#7dc4a8">Presenting to MPs was a reminder that design work has a life beyond the screen. The prototype earned that room. The research made the argument credible. Getting both right is the job.</p>
+    <div class="dark-box reveal">
+      <h3>What I took from this</h3>
+      <p>The projects that matter most are rarely the ones that start with a clean brief and a full team. MATCH started in 48 hours with people I'd never met, solving a problem I cared about long before I worked in tech.</p>
+      <p>The design decisions that held up under scrutiny, voice recording, interpretable algorithms, officer control, weren't clever ideas. They came directly from understanding the people using the system, and the research we did after winning mattered as much as anything built during the hackathon itself. Presenting to MPs was a reminder that design work has a life beyond the screen. The prototype earned that room, the research made the argument credible, and getting both right is the job.</p>
     </div>
 
-    <!-- NAV -->
     <div class="cs-nav">
-      <a href="nhs.html" class="btn-primary">Next: NHS Modernisation &rarr;</a>
-      <a href="compass.html" class="btn-outline">Compass case study</a>
+      <a href="claude-workflow.html" class="btn-primary">Next: Redefining what one designer can ship &rarr;</a>
       <a href="/#work" class="btn-outline">All case studies</a>
     </div>
 
@@ -277,6 +228,8 @@
     <span class="footer-copy">&copy; 2026</span>
   </div>
 </footer>
+
+<div class="cs-bar"></div>
 
 <script src="main.js"></script>
 </body>
