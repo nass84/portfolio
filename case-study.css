@@ -890,6 +890,33 @@
 .cs-mock-tag.ok { background: #e6f0ec; color: #065f46; }
 .cs-mock-tag.no { background: var(--cream); color: var(--coral); }
 
+/* ── Side-by-side photo pair ── */
+.cs-photo-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+.cs-photo-pair figure { margin: 0; }
+.cs-photo-pair img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+.cs-photo-pair figcaption {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .cs-photo-pair { grid-template-columns: 1fr; }
+  .cs-photo-pair img { height: 260px; }
+}
+
 /* ── Embedded presentation / iframe ── */
 .cs-embed { margin: 32px 0; }
 .cs-embed iframe { border-radius: var(--radius-lg); }
