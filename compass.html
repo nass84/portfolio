@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Designing Compass: UX for an agentic AI research assistant – Case study | Becki Floyd</title>
-  <meta name="description" content="As Voxpopme's sole designer, I shaped every layer of an agentic AI product, from the conversational interface and onboarding to the microcopy, the loading states and the demo content that took it to market." />
+  <meta name="description" content="Sole designer on a new category of AI tool, from the conversational interface and clarifying questions through to the branded deliverables it produces." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=2" />
-  <link rel="stylesheet" href="case-study.css?v=4" />
+  <link rel="stylesheet" href="case-study.css?v=5" />
 </head>
 <body>
 
@@ -31,7 +31,7 @@
   <header class="cs-header">
     <a href="/#work" class="cs-back">&larr; Back to work</a>
     <h1>Designing Compass: UX for an agentic AI research assistant</h1>
-    <p class="cs-subtitle">As Voxpopme's sole designer, I shaped every layer of an agentic AI product, from the conversational interface and onboarding to the microcopy, the loading states and the demo content that took it to market.</p>
+    <p class="cs-subtitle">Sole designer on a new category of AI tool, from the conversational interface and clarifying questions through to the branded deliverables it produces.</p>
   </header>
 
   <div class="cs-meta">
@@ -55,87 +55,43 @@
 
   <div class="cs-tldr reveal">
     <div class="cs-tldr-label">The short version</div>
-    <ul>
-      <li>Sole designer on Compass, Voxpopme's agentic AI research assistant, responsible for the full experience.</li>
-      <li>Used Pendo behaviour analysis and session recordings to find why first sessions weren't converting into habits.</li>
-      <li>Reframed a mandatory clarifying question into an answer-first flow, and wrote the copy for every loading and async state.</li>
-      <li>Rewrote onboarding so new users understood Compass's value rather than treating it like ordinary chat.</li>
-    </ul>
-  </div>
-
-  <div class="cs-process reveal">
-    <div class="cs-process-label">My process</div>
-    <p>I design from real behaviour. On Compass I watched how people actually used the product through Pendo and session recordings, and I started with the power users to learn what "good" looked like before working back to low-use and first-time users. The friction I designed against, people getting lost trying to return to a project, jargon that lost non-researchers, clarifying questions nobody read, all came from watching real sessions rather than guessing.</p>
+    <p>Compass is Voxpopme's agentic AI research assistant. It takes a question, searches a customer's research, analyses their video responses and returns an answer. As the only designer at Voxpopme I shaped the whole experience, from the conversation and onboarding to the microcopy and the deliverables it generates.</p>
+    <p>The core of the work was getting Compass to give people the answer they actually wanted on the first try. Answering fast was easy, however a fast answer often missed what the user was really after, so I dug into how good answers are structured as stories and designed clarifying questions that quickly check the user's goal, which means people get what they want straight away rather than a quick answer that misses the mark.</p>
   </div>
 
   <div class="cs-content">
 
-    <section class="cs-section reveal" id="product">
-      <div class="cs-sec-label"><span class="cs-sec-num">1</span> The product</div>
-      <h2>One designer, a new category of tool</h2>
-      <p class="cs-lead">Compass is Voxpopme's agentic AI research assistant. It takes a question, searches a customer's research projects, analyses video responses and returns a recommendation.</p>
-      <p>There was no established design pattern for a tool like this, and as the only designer at Voxpopme I contributed to every layer of the experience: the conversational interface, the onboarding journey, the microcopy, the loading and error states, and the demo content that took it to market.</p>
-
-      <figure class="cs-photo">
-        <video src="images/Compassvideo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Compass working through a question to return an answer"></video>
-        <figcaption>Compass in action: a question goes in, and it works through the research to return an answer.</figcaption>
-      </figure>
-    </section>
+    <figure class="cs-photo reveal">
+      <video src="images/Compassvideo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Compass working through a question to return an answer"></video>
+      <figcaption>Compass in action: a question goes in, and it works through the research to return an answer.</figcaption>
+    </figure>
 
     <section class="cs-section reveal" id="problem">
-      <div class="cs-sec-label"><span class="cs-sec-num">2</span> The problem</div>
-      <h2>Customers were drowning in their own data</h2>
-      <p class="cs-lead">A beta call with an enterprise customer captured the problem in a single phrase.</p>
-      <p>They described being faced with a "cloud of selfie videos", hundreds of hours of customer footage with no fast way to find the insight inside it. Compass existed to turn that cloud into an answer, so the design job was to make that feel effortless and trustworthy from the very first session.</p>
+      <div class="cs-sec-label"><span class="cs-sec-num">1</span> The problem</div>
+      <h2>Customers drowning in their own data</h2>
+      <p class="cs-lead">A beta call with an enterprise customer summed it up in one phrase, a "cloud of selfie videos," hundreds of hours of footage with no fast way to find the insight inside it.</p>
+      <p>Compass existed to turn that cloud into an answer, so the design job was to make that feel effortless and trustworthy from the very first session.</p>
     </section>
 
-    <section class="cs-section reveal" id="challenge">
-      <div class="cs-sec-label"><span class="cs-sec-num">3</span> The challenge</div>
-      <h2>Better answers, more friction</h2>
-      <p class="cs-lead">Pendo behaviour analysis showed a pattern in first sessions: when Compass opened with a clarifying question before answering, users backed out and returned to plain AI Chat.</p>
-      <p>Even when the clarification improved answer quality, the perception was that the tool wasn't ready, and first impressions decide whether a habit forms. This surfaced a core tension in agentic AI design, since better answers often require more input, but more input creates friction. I worked with the product team to test whether delaying or removing the clarifying question changed retention, and the recommendation was to default to a best-effort answer first with an option to refine, rather than a mandatory gate.</p>
+    <section class="cs-section reveal" id="core">
+      <div class="cs-sec-label"><span class="cs-sec-num">2</span> The core work</div>
+      <h2>Clarifying questions that check the goal</h2>
+      <p class="cs-lead">Early behaviour told me two things at once.</p>
+      <p>When Compass just answered as fast as it could, people got a quick response but often not the one they needed, so the output looked impressive without being useful. When it opened with a clumsy mandatory question before doing anything, people read it as the tool not being ready and backed out to plain AI Chat. Neither pure speed nor a blocking gate solved the real problem, which was understanding what someone actually wanted without making them work for it.</p>
+      <p>So I approached it as a storytelling problem rather than a speed problem, and I did the research to back it up properly. I built a research repo of secondary sources on how a genuinely useful answer is structured around the user's underlying goal, spoke directly to customers about what they were really trying to get out of Compass, and used Claude to search back through past customer calls for the same signal. From all of that I designed clarifying questions that check the goal efficiently and in the user's own language, so the very first answer is shaped around what they were actually trying to find out. The questions stopped being a gate and became the thing that makes the answer land, which means people get what they want straight away.</p>
+    </section>
 
-      <div class="before-after">
-        <div class="ba-card">
-          <span class="ba-label ba-before">Before &middot; Mandatory gate</span>
-          <ul>
-            <li>Opens with a clarifying question</li>
-            <li>Users must answer before any result</li>
-            <li>They back out and return to plain AI Chat</li>
-            <li>First impression: "not ready", so no habit forms</li>
-          </ul>
-        </div>
-        <div class="ba-card">
-          <span class="ba-label ba-after">After &middot; Answer-first</span>
-          <ul>
-            <li>Best-effort answer straight away</li>
-            <li>Option to refine, for those who want to</li>
-            <li>Nothing blocking the very first result</li>
-            <li>First impression lands, so a habit can form</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="cs-rows">
-        <div class="cs-row">
-          <div class="cs-row-head">Clarifying question upfront</div>
-          <div class="cs-row-body">Users backed out and returned to AI Chat. Response: defer clarification, answer first.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Slow initial load</div>
-          <div class="cs-row-body">Users left on the first session and didn't return. Response: loading states plus "come back later" messaging.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">No onboarding</div>
-          <div class="cs-row-body">Users got a good answer but immediately created a project, missing Compass's value. Response: product tour plus onboarding copy rewrite.</div>
-        </div>
-      </div>
+    <section class="cs-section reveal" id="outputs">
+      <div class="cs-sec-label"><span class="cs-sec-num">3</span> The deliverables</div>
+      <h2>Designing the outputs, not just the conversation</h2>
+      <p class="cs-lead">An answer is only as good as the thing the user walks away with, so I also designed what Compass produces.</p>
+      <p>I wrote skills that generate properly branded deliverables built to tell a story rather than dump data, including a PDF findings report and presentation outputs, which means a user can take a Compass answer straight to their stakeholders without reformatting it first. The same storytelling thinking that shaped the clarifying questions runs through here too, since the goal throughout is turning research into something someone can act on and share.</p>
     </section>
 
     <section class="cs-section reveal" id="waiting">
-      <div class="cs-sec-label"><span class="cs-sec-num">4</span> Writing for waiting</div>
-      <h2>Loading states and async UX</h2>
-      <p class="cs-lead">Compass runs a multi-step reasoning process: it understands the query, searches projects, analyses video responses and prepares a recommendation. That takes time.</p>
+      <div class="cs-sec-label"><span class="cs-sec-num">4</span> The supporting UX</div>
+      <h2>Waiting and onboarding</h2>
+      <p class="cs-lead">Compass runs a multi-step process, understanding the question, searching projects, analysing video and preparing a recommendation, all of which takes time.</p>
 
       <div class="cs-flow">
         <div class="cs-flow-step"><div class="cs-flow-n">01</div><h4>Understand</h4><p>Interpret the question being asked.</p></div>
@@ -147,47 +103,15 @@
         <div class="cs-flow-step"><div class="cs-flow-n">04</div><h4>Recommend</h4><p>Prepare the answer and its evidence.</p></div>
       </div>
 
-      <p>Every one of those steps is time the user is waiting, so loading states are a UX layer most products ignore, and we didn't. I wrote copy for every state in the processing flow, from progress indicators to waiting messages to "come back later" states for longer tasks. The goal was to reduce anxiety, not just fill silence.</p>
-
-      <div class="callout">
-        <p>"Compass is uncovering insights from your data. Stay on this page while we work."</p>
-        <div class="callout-src">In-progress state</div>
-      </div>
-      <div class="callout">
-        <p>"No need to wait. Compass is running."</p>
-        <div class="callout-src">Async, long-running task</div>
-      </div>
-    </section>
-
-    <section class="cs-section reveal" id="onboarding">
-      <div class="cs-sec-label"><span class="cs-sec-num">5</span> Onboarding</div>
-      <h2>Teaching a new behaviour</h2>
-      <p class="cs-lead">The Pendo data showed users getting a strong first answer and then immediately creating a project, which meant they missed what actually made Compass valuable.</p>
-      <p>I rewrote the onboarding so the product taught its own value: an introduction conversation and a product tour that replaced the earlier tutorial, framed around what a user could get out of Compass rather than a feature walk-through.</p>
+      <p>So I wrote copy for every loading and async state to reduce anxiety rather than just fill silence, including "come back later" messaging for longer tasks. I also rewrote onboarding after the behaviour data showed people getting a good first answer and then immediately creating a project, missing what made Compass valuable, so the new introduction conversation and product tour teach the value rather than walk through features.</p>
     </section>
 
     <section class="cs-section reveal" id="outcomes">
-      <div class="cs-sec-label"><span class="cs-sec-num">6</span> Outcomes</div>
+      <div class="cs-sec-label"><span class="cs-sec-num">5</span> Outcomes</div>
       <h2>A first month that made the case</h2>
       <p class="cs-lead">Compass's first full month of enterprise usage showed the design was landing.</p>
-      <p>The majority of users produced a tangible deliverable, most came back without being prompted, and returning users came back repeatedly. Adoption settled into two healthy patterns, wide and shallow across large accounts and narrow and deep with individual power users, which gave the business a clearer picture of who Compass was for.</p>
+      <p>Most users produced a tangible deliverable, most came back without being prompted, and returning users came back repeatedly. Adoption settled into two healthy patterns, which gave the business a much clearer picture of who Compass was really for:</p>
 
-      <div class="outcome-row">
-        <div class="outcome-stat">
-          <div class="outcome-big">Deliverable</div>
-          <div class="outcome-label">The majority of users produced one in the first month</div>
-        </div>
-        <div class="outcome-stat">
-          <div class="outcome-big">Return</div>
-          <div class="outcome-label">Most came back without being prompted</div>
-        </div>
-        <div class="outcome-stat">
-          <div class="outcome-big">Depth</div>
-          <div class="outcome-label">Returning users came back repeatedly</div>
-        </div>
-      </div>
-
-      <p>Adoption settled into two healthy patterns, which told the business who Compass was really for:</p>
       <div class="two-col">
         <div class="info-card">
           <span class="info-tag">Wide and shallow</span>
@@ -202,10 +126,17 @@
       </div>
     </section>
 
+    <section class="cs-section reveal" id="future">
+      <div class="cs-sec-label"><span class="cs-sec-num">6</span> Where it's heading</div>
+      <h2>Compass first</h2>
+      <p class="cs-lead">Compass started as a way to search research, however the direction now is Compass first, where the assistant becomes the way users do everything.</p>
+      <p>From launching projects to making showreels, directly from whichever LLM they already work in, such as Claude or Copilot. That shifts the design problem from "answer a question well" to "let someone run the whole platform through conversation," so the goal-checking and storytelling groundwork here becomes the foundation for a much bigger surface rather than a single clever feature.</p>
+    </section>
+
     <div class="dark-box reveal">
-      <h3>What I learned designing for agentic AI</h3>
-      <p>Agentic AI tools create new design problems that don't have established patterns. The tension between answer quality and interaction friction is real, since users will choose the tool that responds fastest even when the slower tool gives better answers. Trust is built through transparency, so show your reasoning, through reliability, so don't fail on first use, and through respect for attention, so don't make people wait without a way out.</p>
-      <p>Designing Compass also reinforced that UX writing is product design. The words in a loading state, an error message or an onboarding tooltip carry the same weight as the layout decisions, and on a solo design team you can't afford to treat them as separate disciplines.</p>
+      <h3>What I learned</h3>
+      <p>Agentic AI has no established design patterns, so the interesting problems are new ones. The real tension isn't speed versus quality, it's that a fast answer and a useful answer aren't the same thing, and the way to close that gap is to understand the user's goal cheaply rather than either guessing or interrogating them.</p>
+      <p>It also reinforced that UX writing is product design, since on a solo team the words in a clarifying question, a loading state or a findings report carry as much weight as any layout decision.</p>
     </div>
 
     <div class="cs-nav">
