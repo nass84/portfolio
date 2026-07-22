@@ -43,7 +43,7 @@
   <div class="cs-meta">
     <div class="cs-meta-item">
       <div class="cs-meta-label">Role</div>
-      <div class="cs-meta-value">Sole UX Designer</div>
+      <div class="cs-meta-value">Sole UX Designer &amp; Researcher</div>
     </div>
     <div class="cs-meta-item">
       <div class="cs-meta-label">Company</div>
@@ -55,40 +55,22 @@
     </div>
     <div class="cs-meta-item">
       <div class="cs-meta-label">Disciplines</div>
-      <div class="cs-meta-value">AI-augmented design &middot; Design systems &middot; UX writing &middot; Prompt engineering</div>
+      <div class="cs-meta-value">User research &middot; AI-augmented design &middot; Design systems &middot; UX writing</div>
     </div>
   </div>
 
   <div class="cs-tldr reveal">
     <div class="cs-tldr-label">The short version</div>
-    <ul>
-      <li>Sole UX designer at Voxpopme, responsible for everything from product UX to brand.</li>
-      <li>Built a library of 7+ AI skills that encode design decisions, brand rules and accessibility requirements.</li>
-      <li>Generated 53 chat components consistently from a single skill file.</li>
-      <li>Shifted from designing components to designing instructions, operating at team scale as one person.</li>
-    </ul>
-  </div>
-
-  <div class="cs-process reveal">
-    <div class="cs-process-label">My process</div>
-    <p>Writing a skill forces me to make every implicit design decision explicit. My approach is to encode the reasoning rather than just the rule, keep brand separate from behaviour so each can change on its own, and treat every skill as an iterable design artefact that I audit and improve, the same way I would a component library.</p>
+    <p>I'm the sole UX designer and researcher at Voxpopme, responsible for the full product experience on a product that kept outgrowing what one person could ship. Rather than hire, I changed how I design, building a library of written AI skills that encode my design decisions, accessibility requirements and the reasoning behind them once, so Claude can generate consistent output from them every time. That shift, from designing components to designing the instructions behind them, is what lets one person operate at team scale.</p>
   </div>
 
   <div class="cs-content">
 
-    <section class="cs-section reveal" id="constraint">
-      <div class="cs-sec-label"><span class="cs-sec-num">1</span> The constraint</div>
-      <h2>One designer. A product org that kept growing.</h2>
-      <p class="cs-lead">I'm the only designer at Voxpopme, responsible for the full stack, for a product that kept outgrowing what one person could ship.</p>
-      <p>Product UX, design systems, brand, presentations, demo content, research analysis, writing. As Compass, Voxpopme's agentic AI product, moved from concept to live, the scope grew faster than traditional tools could keep up with.</p>
-      <p class="pull-quote">The conventional response is to hire. I changed how I design instead.</p>
-    </section>
-
     <section class="cs-section reveal" id="shift">
-      <div class="cs-sec-label"><span class="cs-sec-num">2</span> The shift</div>
+      <div class="cs-sec-label"><span class="cs-sec-num">1</span> The shift</div>
       <h2>From designing components to designing instructions</h2>
-      <p class="cs-lead">If Claude can generate production-quality output, the bottleneck isn't execution, it's the quality of the instructions.</p>
-      <p>So I started treating skills the way I'd treated design systems, as reusable references that encode a decision once and apply it everywhere. I write a skill once, Claude generates from it, and the output covers chat components, branded decks, UX copy, and charts and diagrams.</p>
+      <p class="cs-lead">The conventional response to a product outgrowing one designer is to hire. I took a different route.</p>
+      <p>Because if Claude can generate production-quality output then the bottleneck stops being execution and becomes the quality of the instructions. So I started treating skills the way I'd always treated design systems, as reusable references that encode a decision once and apply it everywhere, which means I write a skill once, Claude generates from it, and the same file reliably produces chat components, presentations, UX copy, and charts and diagrams.</p>
 
       <div class="cs-diagram">
         <div class="cs-diagram-node">Skill file<span>write once</span></div>
@@ -97,45 +79,20 @@
         <div class="cs-diagram-arrow">&rarr;</div>
         <div class="cs-diagram-outputs">
           <div class="cs-diagram-chip">Chat components</div>
-          <div class="cs-diagram-chip">Branded decks</div>
+          <div class="cs-diagram-chip">Presentations</div>
           <div class="cs-diagram-chip">UX copy</div>
           <div class="cs-diagram-chip">Charts &amp; diagrams</div>
         </div>
       </div>
 
-      <div class="cs-rows">
-        <div class="cs-row">
-          <div class="cs-row-head">Build each component manually in Figma or code</div>
-          <div class="cs-row-body">Write a skill once, then generate components on demand.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Write copy separately, then paste into designs</div>
-          <div class="cs-row-body">UX copy and design produced in the same session.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Build presentations slide by slide</div>
-          <div class="cs-row-body">Branded presentations generated from a prompt.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Re-explain brand rules each time</div>
-          <div class="cs-row-body">Brand rules encoded in the skill and applied automatically.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Context-switch constantly between tools</div>
-          <div class="cs-row-body">Claude handles execution, I handle decisions.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">Output limited by hours in the day</div>
-          <div class="cs-row-body">Output limited by clarity of thinking, not time.</div>
-        </div>
-      </div>
+      <p>The practical effect is that almost everything about my week inverted. Rather than building each component by hand in Figma, writing copy separately and pasting it in, and re-explaining the same design rules every single time, I now encode the decision once and let Claude handle execution while I handle the thinking, so my output is limited by the clarity of my reasoning rather than the hours in the day.</p>
     </section>
 
     <section class="cs-section reveal" id="system">
-      <div class="cs-sec-label"><span class="cs-sec-num">3</span> The system</div>
-      <h2>The skills I built and why</h2>
-      <p class="cs-lead">A skill is a markdown file that encodes design decisions, brand rules and accessibility requirements. Writing one is a design act, since the decisions are expressed in language rather than pixels.</p>
-      <p>Claude reads it before generating anything, and I maintain a library covering the full range of Voxpopme outputs.</p>
+      <div class="cs-sec-label"><span class="cs-sec-num">2</span> The system</div>
+      <h2>The skills I built, and why</h2>
+      <p class="cs-lead">A skill is a markdown file that encodes design decisions, accessibility requirements and the reasoning behind them, so writing one is a design act in itself, since the decisions are expressed in language rather than pixels.</p>
+      <p>Claude reads the relevant skill before generating anything, and I maintain a library covering the full range of Voxpopme outputs, from the platform agent design system and the presentation generator through to the copywriting voice, the chart selection rules and the customer archetype identifier that maps a user's language to the right product positioning.</p>
 
       <div class="cs-code">
         <div class="cs-code-head">voxpopme-platform-agent / SKILL.md</div>
@@ -150,48 +107,14 @@ Never put white text inside sentiment-coloured chart bars.
 --purple: #341C4C   --teal: #58B999   --teal-text: #2E7D60</code></pre>
       </div>
       <p style="font-size:14px;color:var(--text-muted);margin-top:-8px;">A fragment of one skill. The comments mark what makes it reliable: it encodes <em>why</em>, names the anti-patterns, and points at a single set of brand tokens.</p>
-
-      <div class="cs-rows">
-        <div class="cs-row">
-          <div class="cs-row-head">voxpopme-pptx</div>
-          <div class="cs-row-body">Slide layouts, brand colours, WCAG contrast rules, typography scale, chart patterns, sentiment colour system, anti-patterns. Generates branded decks from a prompt.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">voxpopme-platform-agent</div>
-          <div class="cs-row-body">Full design system for the Voxpopme AI agent: 53 chat components across 6 categories, colour tokens, accessible text pairings, output rules for every format (HTML, React, PPTX, DOCX, SVG).</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">voxpopme-copywriting</div>
-          <div class="cs-row-body">Brand voice, writing principles, preferred vocabulary, microcopy rules, tone modulation by context. Applied to all written outputs.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">voxpopme-brand-guidelines</div>
-          <div class="cs-row-body">Canonical brand reference: colours, typography, imagery rules, visual identity. The source of truth across all skills.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">ux-graph-skill</div>
-          <div class="cs-row-body">Chart type selection rules, plain-language summary requirements, trust and attribution standards, cognitive load principles, accessibility for data visualisation.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">presentation-design-rules</div>
-          <div class="cs-row-body">Universal slide design principles: narrative architecture, content density, visual hierarchy, layout logic. Applied to every deck regardless of brand.</div>
-        </div>
-        <div class="cs-row">
-          <div class="cs-row-head">voxpopme-archetype-identifier</div>
-          <div class="cs-row-body">Customer archetype system (Truth Teller, Shape Shifter, Future Finder). Identifies archetype from user language and maps to the right product positioning and front door.</div>
-        </div>
-      </div>
     </section>
 
     <section class="cs-section reveal" id="decisions">
-      <div class="cs-sec-label"><span class="cs-sec-num">4</span> The design decisions</div>
+      <div class="cs-sec-label"><span class="cs-sec-num">3</span> The design decisions</div>
       <h2>What makes a skill actually work</h2>
-      <p class="cs-lead">Skills fail for the same reason design systems do, so either too vague to act on, or too rigid to handle variation. Here's what makes one reliable.</p>
+      <p class="cs-lead">Skills fail for the same reasons design systems do, either too vague to act on or too rigid to handle variation, so the interesting work is in what makes one reliable.</p>
+      <p>The first principle is to encode the reasoning rather than just the rule, because a rule that also explains why is one Claude can apply to edge cases it never anticipated. The clearest example is accessibility: rather than "use teal for text," the skill states that the lighter teal fails WCAG contrast at body size and should map to a darker variant, which holds up everywhere rather than only in the case I happened to write for.</p>
 
-      <div class="decision-card">
-        <h4>Encode the reasoning, not just the rule</h4>
-        <p>A rule like "use Dark Teal (#2E7D60) for teal text on white backgrounds" is more durable than "use teal for text" because it explains why, since the brand teal (#58B999) fails WCAG contrast at body size. Claude can then apply the reasoning to edge cases the rule doesn't anticipate.</p>
-      </div>
       <div class="cs-contrast">
         <div class="cs-contrast-card cs-contrast-fail">
           <div class="cs-contrast-swatch" style="color:#58B999">Aa Sample text</div>
@@ -203,42 +126,14 @@ Never put white text inside sentiment-coloured chart bars.
         </div>
       </div>
 
-      <div class="decision-card">
-        <h4>Separate brand from behaviour</h4>
-        <p>Brand skills (colours, typography, voice) are stable and change rarely, while behaviour skills (component patterns, output rules) evolve with the product. Keeping them separate means I can update one without breaking the other.</p>
-      </div>
-      <div class="decision-card">
-        <h4>Anti-patterns matter as much as patterns</h4>
-        <p>The PPTX skill includes explicit anti-patterns, things that have been misused or look wrong even when technically correct. "Never put white text inside sentiment-coloured chart bars" only exists because I'd seen it go wrong, and negative examples are the most reliable guard rails.</p>
-      </div>
-      <div class="decision-card">
-        <h4>Skills are iterable, like any design artefact</h4>
-        <p>The first version of the platform agent skill had no accessibility constraints. After an audit revealed WCAG contrast failures in the brand palette, I rebuilt it with accessible text variants for every background, so it now encodes that the brand teal fails contrast at small sizes and maps to a dark variant automatically.</p>
-      </div>
+      <p>The rest follows from treating skills as living design artefacts. I keep the stable rules separate from the ones that evolve, because things like voice and visual identity change rarely while component patterns move with the product, so separating them means I can update one without breaking the other. I lean heavily on anti-patterns, since a rule like "never put white text inside sentiment-coloured chart bars" only exists because I'd watched it go wrong, and negative examples turn out to be the most reliable guard rails. And I treat every skill as iterable, which is how the platform agent skill went from having no accessibility constraints in its first version to automatically handling contrast after an audit surfaced the failures.</p>
     </section>
 
     <section class="cs-section reveal" id="practice">
-      <div class="cs-sec-label"><span class="cs-sec-num">5</span> In practice</div>
+      <div class="cs-sec-label"><span class="cs-sec-num">4</span> In practice</div>
       <h2>What this enabled</h2>
-      <p class="cs-lead">Skill-driven generation changed what fits in a working week.</p>
-
-      <div class="research-grid">
-        <div class="research-card">
-          <div class="research-group">Decks</div>
-          <h4>A branded deck from a prompt</h4>
-          <p>A fully branded Voxpopme presentation, correct fonts, colours, sentiment chart system and layouts, generated from a brief in a single session. Previously half a day's work, now 20 minutes of review.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-group">Systems</div>
-          <h4>A design system at speed</h4>
-          <p>The platform agent design system covers 53 chat components. Building those manually would have taken weeks, writing the skill took two days, and every component since has stayed on brand without me touching it.</p>
-        </div>
-        <div class="research-card">
-          <div class="research-group">Writing</div>
-          <h4>Copy and design together</h4>
-          <p>UX copy for Compass, loading states, error messages, onboarding and microcopy, produced in the same session as layout. The copywriting skill applies the voice automatically, so I review rather than write from scratch.</p>
-        </div>
-      </div>
+      <p class="cs-lead">Skill-driven generation changed what actually fits in a working week.</p>
+      <p>A fully formatted Voxpopme deck, with the correct layouts, sentiment chart system and typography, now comes out of a single session, so what used to be half a day is 20 minutes of review. The platform agent design system covers 53 chat components, which would have taken weeks to build by hand, however writing the skill took two days and every component since has stayed consistent without me touching it. And UX copy for Compass, from loading states to error messages to onboarding, is now produced in the same session as the layout, because the copywriting skill applies the voice automatically, so I review rather than write from scratch.</p>
 
       <div class="outcome-row">
         <div class="outcome-stat">
@@ -258,8 +153,8 @@ Never put white text inside sentiment-coloured chart bars.
 
     <div class="dark-box reveal">
       <h3>What this says about how design is changing</h3>
-      <p>The question for hiring managers isn't whether a designer uses AI, everyone will. It's whether they understand it well enough to build reliable systems with it, rather than just using it as a faster Figma.</p>
-      <p>Writing a skill requires you to articulate every design decision you'd normally make implicitly, which forces clarity. A designer who can do that understands their own work at a deeper level, and can communicate it to engineers, product managers and stakeholders far more effectively than someone who keeps the knowledge in their head. The output of my workflow isn't just faster design, it's design that's documented, consistent, accessible and transferable, and that's the real shift.</p>
+      <p>The question for a hiring manager isn't whether a designer uses AI, because everyone soon will, it's whether they understand it well enough to build reliable systems with it rather than treating it as a faster Figma.</p>
+      <p>Writing a skill forces you to articulate every design decision you'd normally make implicitly, which forces a kind of clarity, so a designer who can do it understands their own work at a deeper level and can hand that understanding to engineers, product managers and stakeholders far more effectively than someone who keeps it all in their head. The output of this workflow isn't just faster design, it's design that's documented, consistent, accessible and transferable, and that's the real shift.</p>
     </div>
 
     <div class="cs-nav">
