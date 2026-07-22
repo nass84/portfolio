@@ -95,14 +95,44 @@
       <div class="cs-sec-label"><span class="cs-sec-num">3</span> The human cost</div>
       <h2>What a bad match looks like in practice</h2>
 
-      <div class="story-block">
-        <div class="story-header">Composite case, based on real experiences</div>
-        <div class="story-body">
-          <p>Shaheen arrived at the council at 9am with her three children, fleeing domestic violence. By 1:30pm she'd been offered a property three miles from her danger zone, because risk data had been mis-entered. The match was unsafe.</p>
-          <p>Back to searching. By 3pm a second option came up, 45 minutes from her support network and 90 minutes from her children's schools. When she arrived, it was a B&amp;B housing adult men. She called the out-of-hours line, there were no alternatives, and <strong>she paid for a hotel that night herself.</strong></p>
-          <p>This isn't an edge case, it's what the system produces when it's under pressure and running on manual processes. The cost isn't just financial, since every bad match is a family in the wrong place at the worst possible moment.</p>
+      <p class="cs-lead">A composite case, based on real experiences, shows the cascade a bad match sets off in a single afternoon.</p>
+
+      <div class="cs-timeline">
+        <div class="cs-tl-item">
+          <div class="cs-tl-time">9:00</div>
+          <div class="cs-tl-rail"></div>
+          <div class="cs-tl-body">
+            <h4>Shaheen arrives, fleeing domestic violence</h4>
+            <p>She comes to the council with her three children, needing somewhere safe that day.</p>
+          </div>
+        </div>
+        <div class="cs-tl-item">
+          <div class="cs-tl-time">13:30</div>
+          <div class="cs-tl-rail"></div>
+          <div class="cs-tl-body">
+            <h4>Offered an unsafe property</h4>
+            <p>A home three miles from her danger zone, because risk data had been mis-entered. The match was unsafe, so back to searching.</p>
+          </div>
+        </div>
+        <div class="cs-tl-item">
+          <div class="cs-tl-time">15:00</div>
+          <div class="cs-tl-rail"></div>
+          <div class="cs-tl-body">
+            <h4>A B&amp;B housing adult men</h4>
+            <p>A second option, 45 minutes from her support network and 90 minutes from her children's schools. When she arrived, it wasn't safe either.</p>
+          </div>
+        </div>
+        <div class="cs-tl-item">
+          <div class="cs-tl-time">That night</div>
+          <div class="cs-tl-rail"></div>
+          <div class="cs-tl-body">
+            <h4>She paid for a hotel herself</h4>
+            <p>The out-of-hours line had no alternatives left to offer.</p>
+          </div>
         </div>
       </div>
+
+      <p>This isn't an edge case, it's what the system produces when it's under pressure and running on manual processes. The cost isn't just financial, since every bad match is a family in the wrong place at the worst possible moment.</p>
     </section>
 
     <section class="cs-section reveal" id="solution">
@@ -111,33 +141,73 @@
       <p class="cs-lead">MATCH replaces the manual workflow with a four-stage AI-assisted process, keeping the officer in control at every step.</p>
       <p>AI handles the information processing while humans make the placement decision.</p>
 
-      <div class="flow-grid">
-        <div class="flow-step">
-          <div class="flow-num">01</div>
+      <div class="cs-flow">
+        <div class="cs-flow-step">
+          <div class="cs-flow-n">01</div>
           <h4>Voice recording</h4>
-          <p>Officer records the needs assessment verbally. No forms, natural conversation.</p>
+          <p>Officer records the needs assessment verbally. No forms.</p>
         </div>
-        <div class="flow-step">
-          <div class="flow-num">02</div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step">
+          <div class="cs-flow-n">02</div>
           <h4>Auto-transcription</h4>
-          <p>Audio transcribed and key information extracted: needs, risks, exclusion zones.</p>
+          <p>Needs, risks and exclusion zones extracted from the audio.</p>
         </div>
-        <div class="flow-step">
-          <div class="flow-num">03</div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step">
+          <div class="cs-flow-n">03</div>
           <h4>Weighted matching</h4>
-          <p>Algorithm scores available properties against the household profile. Transparent, not black-box.</p>
+          <p>Properties scored against the household profile. Transparent, not black-box.</p>
         </div>
-        <div class="flow-step">
-          <div class="flow-num">04</div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step">
+          <div class="cs-flow-n">04</div>
           <h4>Officer review</h4>
-          <p>Ranked results with reasoning. The officer makes the final call with full context.</p>
+          <p>Ranked results with reasoning. The officer makes the final call.</p>
         </div>
       </div>
+
+      <div class="cs-mock">
+        <div class="cs-mock-head">Ranked results <span>&middot; Household: single parent, 2 children, mobility needs, exclusion zone SE postcodes</span></div>
+        <div class="cs-mock-row">
+          <div class="cs-mock-score">92</div>
+          <div>
+            <div class="cs-mock-prop">14 Elm Court, ground floor</div>
+            <span class="cs-mock-tag ok">Outside exclusion zone</span><span class="cs-mock-tag ok">Step-free access</span><span class="cs-mock-tag ok">0.4mi to school</span>
+          </div>
+        </div>
+        <div class="cs-mock-row">
+          <div class="cs-mock-score">78</div>
+          <div>
+            <div class="cs-mock-prop">6 Maple Street, first floor</div>
+            <span class="cs-mock-tag ok">Outside exclusion zone</span><span class="cs-mock-tag no">Stairs only</span><span class="cs-mock-tag ok">1.1mi to school</span>
+          </div>
+        </div>
+        <div class="cs-mock-row">
+          <div class="cs-mock-score low">34</div>
+          <div>
+            <div class="cs-mock-prop">2 Foundry Road</div>
+            <span class="cs-mock-tag no">Inside exclusion zone</span><span class="cs-mock-tag no">3.2mi to school</span>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:-12px;">Illustrative mock. Every score shows the reasons behind it, so an officer can see <em>why</em> a property ranked where it did, not just that it did.</p>
 
       <div class="callout">
         <p>The matching uses a weighted scoring algorithm, deliberately interpretable and transparent rather than a machine learning model. That matters for trust, for auditability, and for explaining decisions to households and officers.</p>
         <div class="callout-src">Technical decision, hackathon documentation</div>
       </div>
+
+      <figure class="cs-figure">
+        <div class="build-monitor">
+          <div class="build-screen">
+            <img src="images/match-prototype.png" alt="The MATCH prototype: a GOV.UK homelessness assessment flow" loading="lazy" />
+          </div>
+          <span class="build-stand-neck"></span>
+          <span class="build-stand-base"></span>
+        </div>
+        <figcaption class="cs-figcaption">The working prototype, built in the GOV.UK design system, that officers record the assessment against.</figcaption>
+      </figure>
     </section>
 
     <section class="cs-section reveal" id="contribution">
@@ -197,6 +267,13 @@
       <h2>From hackathon to Parliament</h2>
       <p class="cs-lead">The prototype won the government hackathon outright. Three months later I presented it to MPs in Parliament.</p>
       <p>Standing up to explain both the problem and what we'd built, to an audience that could actually act on it, required a different kind of design work: translating a technical prototype into a narrative that landed for a policy audience. I wrote the full presentation structure, speaker notes for a 13-slide deck and the video research intro script.</p>
+
+      <!-- TODO: re-enable once photo-parliament.jpg is re-exported (current file has a placeholder icon over it)
+      <figure class="cs-photo">
+        <img src="images/photo-parliament.jpg" alt="Becki Floyd presenting MATCH to MPs in Parliament" loading="lazy" />
+        <figcaption>Presenting MATCH to MPs in Parliament, March 2026.</figcaption>
+      </figure>
+      -->
 
       <div class="award-block">
         <h4>Gov.uk Hackathon, First Place</h4>
