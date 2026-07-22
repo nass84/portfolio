@@ -138,6 +138,20 @@
       <p class="cs-lead">A skill is a markdown file that encodes design decisions, brand rules and accessibility requirements. Writing one is a design act, since the decisions are expressed in language rather than pixels.</p>
       <p>Claude reads it before generating anything, and I maintain a library covering the full range of Voxpopme outputs.</p>
 
+      <div class="cs-code">
+        <div class="cs-code-head">voxpopme-platform-agent / SKILL.md</div>
+        <pre><code><span class="c-h">## Colour, teal text on light backgrounds</span>
+Brand teal #58B999 fails WCAG AA at body size.   <span class="c-note">&larr; the reasoning, not just the rule</span>
+Map teal text on white to Dark Teal #2E7D60 instead.
+
+<span class="c-h">## Anti-patterns</span>   <span class="c-note">&larr; negative examples are the best guard rails</span>
+Never put white text inside sentiment-coloured chart bars.
+
+<span class="c-h">## Brand tokens</span>   <span class="c-note">&larr; one source of truth, reused everywhere</span>
+--purple: #341C4C   --teal: #58B999   --teal-text: #2E7D60</code></pre>
+      </div>
+      <p style="font-size:14px;color:var(--text-muted);margin-top:-8px;">A fragment of one skill. The comments mark what makes it reliable: it encodes <em>why</em>, names the anti-patterns, and points at a single set of brand tokens.</p>
+
       <div class="cs-rows">
         <div class="cs-row">
           <div class="cs-row-head">voxpopme-pptx</div>
@@ -179,6 +193,17 @@
         <h4>Encode the reasoning, not just the rule</h4>
         <p>A rule like "use Dark Teal (#2E7D60) for teal text on white backgrounds" is more durable than "use teal for text" because it explains why, since the brand teal (#58B999) fails WCAG contrast at body size. Claude can then apply the reasoning to edge cases the rule doesn't anticipate.</p>
       </div>
+      <div class="cs-contrast">
+        <div class="cs-contrast-card cs-contrast-fail">
+          <div class="cs-contrast-swatch" style="color:#58B999">Aa Sample text</div>
+          <div class="cs-contrast-meta"><span>Brand teal #58B999</span><span><span class="ratio">2.4:1</span> &middot; <span class="verdict">Fails AA</span></span></div>
+        </div>
+        <div class="cs-contrast-card cs-contrast-pass">
+          <div class="cs-contrast-swatch" style="color:#2E7D60">Aa Sample text</div>
+          <div class="cs-contrast-meta"><span>Dark teal #2E7D60</span><span><span class="ratio">5.0:1</span> &middot; <span class="verdict">Passes AA</span></span></div>
+        </div>
+      </div>
+
       <div class="decision-card">
         <h4>Separate brand from behaviour</h4>
         <p>Brand skills (colours, typography, voice) are stable and change rarely, while behaviour skills (component patterns, output rules) evolve with the product. Keeping them separate means I can update one without breaking the other.</p>
