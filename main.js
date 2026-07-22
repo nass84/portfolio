@@ -28,6 +28,35 @@ if (track) {
   track.innerHTML = cards + cards;
 }
 
+// ── Access modal (e.g. Amber's Magic Pictures) ──
+const modalTriggers = document.querySelectorAll('[data-modal]');
+modalTriggers.forEach(trigger => {
+  const modal = document.getElementById(trigger.dataset.modal);
+  if (!modal) return;
+
+  const open = () => {
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  trigger.addEventListener('click', open);
+  trigger.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+  });
+
+  modal.querySelector('.modal-close')?.addEventListener('click', close);
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) close();
+  });
+});
+
 // ── Nav shadow on scroll ──
 const nav = document.getElementById('nav');
 if (nav) {
