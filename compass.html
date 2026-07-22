@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redefining What One Designer Can Ship with Claude – Case Study | Becki Floyd</title>
+  <meta name="description" content="How I rebuilt my design workflow around Claude as a collaborator — using written skills to generate production-ready components as sole UX designer at Voxpopme." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">Becki Floyd</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#work">Work</a></li>
+    <li><a href="/#contact" class="nav-cta">Get in touch</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<article class="case-study">
+  <header class="cs-header">
+    <a href="/#work" class="cs-back">&larr; Back to work</a>
+    <div class="cs-eyebrow"><span class="cs-dot"></span> Case study &middot; Voxpopme</div>
+    <h1>Redefining what one designer<br>can ship with Claude</h1>
+    <p class="cs-subtitle">How I rebuilt my design workflow around Claude as a collaborator — using written skills to generate production-ready components, and expanding my output without expanding the team.</p>
+  </header>
+
+  <div class="cs-meta">
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Role</div>
+      <div class="cs-meta-value">Sole UX Designer</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Company</div>
+      <div class="cs-meta-value">Voxpopme</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Timeline</div>
+      <div class="cs-meta-value">2024–2025</div>
+    </div>
+    <div class="cs-meta-item">
+      <div class="cs-meta-label">Disciplines</div>
+      <div class="cs-meta-value">AI-Augmented Design &middot; Design Systems &middot; UX Writing &middot; Prompt Engineering</div>
+    </div>
+  </div>
+
+  <div class="cs-jump-nav">
+    <a href="#constraint">The constraint</a>
+    <a href="#shift">The shift</a>
+    <a href="#system">The system</a>
+    <a href="#decisions">Design decisions</a>
+    <a href="#practice">In practice</a>
+  </div>
+
+  <div class="cs-tldr">
+    <div class="cs-tldr-label">The short version</div>
+    <ul>
+      <li>Sole UX designer at Voxpopme, responsible for everything from product UX to brand</li>
+      <li>Built a library of 7+ AI skills that encode design decisions, brand rules, and accessibility requirements</li>
+      <li>53 chat components generated consistently from a single skill file</li>
+      <li>Shifted from designing components to designing instructions, operating at team scale as one person</li>
+    </ul>
+  </div>
+
+  <div class="cs-content">
+
+    <!-- THE CONSTRAINT -->
+    <section class="cs-section" id="constraint">
+      <div class="cs-sec-label"><span class="cs-sec-num">1</span> The constraint</div>
+      <h2>One designer. A product org that kept growing.</h2>
+      <p>At Voxpopme I'm the only designer. That means I'm responsible for the full stack: product UX, design systems, brand outputs, presentations, demo content, research analysis, and writing. As the product grew — and as Compass, Voxpopme's agentic AI product, moved from concept to live — the scope grew faster than any one person could keep up with using traditional tools.</p>
+      <p class="pull-quote">The conventional response is to hire. I took a different approach: I changed how I design.</p>
+    </section>
+
+    <hr class="cs-divider" />
+
+    <!-- THE SHIFT -->
+    <section class="cs-section" id="shift">
+      <div class="cs-sec-label"><span class="cs-sec-num">2</span> The shift</div>
+      <h2>From designing components to designing instructions</h2>
+      <p>The core insight was this: if Claude can generate production-quality code and design outputs, the bottleneck isn't execution — it's the quality of the instructions. A designer who writes excellent prompts and structured skills can operate at a fundamentally different scale than one who doesn't.</p>
+      <p>I started treating skills the way I'd previously treated design systems: as reusable, high-quality references that encode decisions once and apply them everywhere.</p>
+
+      <div class="before-after">
+        <div class="ba-card">
+          <span class="ba-label ba-before">Before</span>
+          <ul>
+            <li>Build each component manually in Figma or code</li>
+            <li>Write copy separately, then paste into designs</li>
+            <li>Build presentations slide by slide</li>
+            <li>Re-explain brand rules each time</li>
+            <li>Context-switch constantly between tools</li>
+            <li>Output limited by hours in the day</li>
+          </ul>
+        </div>
+        <div class="ba-card">
+          <span class="ba-label ba-after">After</span>
+          <ul>
+            <li>Write a skill once; generate components on demand</li>
+            <li>UX copy and design produced in the same session</li>
+            <li>Branded presentations generated from a prompt</li>
+            <li>Brand rules encoded in the skill — applied automatically</li>
+            <li>Claude handles execution; I handle decisions</li>
+            <li>Output limited by clarity of thinking, not time</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="cs-divider" />
+
+    <!-- THE SYSTEM -->
+    <section class="cs-section" id="system">
+      <div class="cs-sec-label"><span class="cs-sec-num">3</span> The system</div>
+      <h2>The skills I built and why</h2>
+      <p>A skill is a structured markdown file that encodes design decisions, brand rules, accessibility requirements, and component patterns. Claude reads it before generating any output. Writing a good skill is a design act — it requires the same decisions you'd make building a design system, but expressed in language rather than pixels.</p>
+      <p>I built and maintain a library of skills covering the full range of Voxpopme outputs:</p>
+
+      <div class="skill-table">
+        <div class="skill-row skill-row--header">
+          <div class="skill-cell">Skill</div>
+          <div class="skill-cell">What it encodes</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>voxpopme-pptx</strong></div>
+          <div class="skill-cell">Slide layouts, brand colours, WCAG contrast rules, typography scale, chart patterns, sentiment colour system, anti-patterns. Generates branded decks from a prompt.</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>voxpopme-platform-agent</strong></div>
+          <div class="skill-cell">Full design system for the Voxpopme AI agent: 53 chat components across 6 categories, colour tokens, accessible text pairings, output rules for every format (HTML, React, PPTX, DOCX, SVG).</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>voxpopme-copywriting</strong></div>
+          <div class="skill-cell">Brand voice, writing principles, preferred vocabulary, microcopy rules, tone modulation by context. Applied to all written outputs.</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>voxpopme-brand-guidelines</strong></div>
+          <div class="skill-cell">Canonical brand reference: colours, typography, imagery rules, visual identity. Acts as the source of truth across all skills.</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>ux-graph-skill</strong></div>
+          <div class="skill-cell">Chart type selection rules, plain-language summary requirements, trust and attribution standards, cognitive load principles, accessibility for data visualisation.</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>presentation-design-rules</strong></div>
+          <div class="skill-cell">Universal slide design principles: narrative architecture, content density, visual hierarchy, layout logic. Applied to every deck regardless of brand.</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-cell"><strong>voxpopme-archetype-identifier</strong></div>
+          <div class="skill-cell">Customer archetype system (Truth Teller, Shape Shifter, Future Finder). Identifies archetype from user language; maps to the right product positioning and front door.</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="cs-divider" />
+
+    <!-- DESIGN DECISIONS -->
+    <section class="cs-section" id="decisions">
+      <div class="cs-sec-label"><span class="cs-sec-num">4</span> The design decisions</div>
+      <h2>What makes a skill actually work</h2>
+      <p>Writing a skill that consistently produces good output requires the same discipline as writing a design system that developers actually follow. Most fail for the same reason: they're too vague to be actionable, or too prescriptive to handle variation. Here's what I learned.</p>
+
+      <div class="decision-card">
+        <h4>Encode the reasoning, not just the rule</h4>
+        <p>A rule like "use Dark Teal (#2E7D60) for teal text on white backgrounds" is more durable than "use teal for text" because it explains why — the brand teal (#58B999) fails WCAG contrast at body size. Claude can apply the reasoning to edge cases the rule doesn't anticipate.</p>
+      </div>
+
+      <div class="decision-card">
+        <h4>Separate brand from behaviour</h4>
+        <p>Brand skills (colours, typography, voice) are stable and change rarely. Behaviour skills (component patterns, output rules) evolve with the product. Keeping them separate means I can update one without breaking the other.</p>
+      </div>
+
+      <div class="decision-card">
+        <h4>Anti-patterns are as important as patterns</h4>
+        <p>The PPTX skill includes explicit anti-patterns — things that have been misused or look wrong even when technically correct. "Never put white text inside sentiment-coloured chart bars" is a rule that only exists because I'd seen it go wrong. Negative examples are the most reliable guard rails.</p>
+      </div>
+
+      <div class="decision-card">
+        <h4>Skills are iterable, like any design artefact</h4>
+        <p>The first version of the platform agent skill had no accessibility constraints. After an audit revealed WCAG contrast failures in the brand palette, I rebuilt it with accessible text variants for every background. The skill now encodes that the brand teal fails contrast at small sizes, and maps to a dark variant automatically.</p>
+      </div>
+    </section>
+
+    <hr class="cs-divider" />
+
+    <!-- IN PRACTICE -->
+    <section class="cs-section" id="practice">
+      <div class="cs-sec-label"><span class="cs-sec-num">5</span> In practice</div>
+      <h2>What this enabled</h2>
+      <p>The shift from manual production to skill-driven generation changed what was possible in a working week. A few concrete examples:</p>
+
+      <div class="callout">
+        <p>A full branded Voxpopme presentation — correct fonts, colours, sentiment chart system, and layouts — generated from a brief in a single session. Previously half a day's work. Now 20 minutes of review and refinement.</p>
+        <div class="callout-src">Voxpopme PPTX skill in production use</div>
+      </div>
+
+      <div class="callout">
+        <p>The platform agent design system covers 53 chat components. Building those manually would have taken weeks. Writing the skill took two days. Every component generated since has been consistent with the brand without me touching it.</p>
+        <div class="callout-src">Voxpopme Platform Agent skill</div>
+      </div>
+
+      <div class="callout">
+        <p>UX copy for Compass — loading states, error messages, onboarding flow, microcopy — produced in the same session as layout decisions. The copywriting skill applies Voxpopme's voice automatically; I review and refine rather than write from scratch.</p>
+        <div class="callout-src">Voxpopme Copywriting skill + Compass UX work</div>
+      </div>
+
+      <div class="outcome-row">
+        <div class="outcome-stat">
+          <div class="outcome-big">7+</div>
+          <div class="outcome-label">Production skills written and maintained</div>
+        </div>
+        <div class="outcome-stat">
+          <div class="outcome-big">53</div>
+          <div class="outcome-label">Chat components covered by the platform agent skill</div>
+        </div>
+        <div class="outcome-stat">
+          <div class="outcome-big">1</div>
+          <div class="outcome-label">Designer. Same scope as a team.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <div class="dark-box">
+      <h3>What this says about how design is changing</h3>
+      <p>The question for hiring managers isn't whether a designer uses AI — everyone will. It's whether they understand it well enough to build reliable systems with it, rather than just using it as a faster Figma.</p>
+      <p>Writing a skill requires you to articulate every design decision you'd normally make implicitly. It forces clarity. A designer who can do that is also a designer who understands their own work at a deeper level — and can communicate it to engineers, product managers, and stakeholders far more effectively than someone who keeps the knowledge in their head.</p>
+      <p>The output of my workflow isn't just faster design. It's design that's documented, consistent, accessible, and transferable. That's the real shift.</p>
+    </div>
+
+    <!-- NAV -->
+    <div class="cs-nav">
+      <a href="hackathon.html" class="btn-primary">Next: Hackathon to Parliament &rarr;</a>
+      <a href="/#work" class="btn-outline">All case studies</a>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-name">Becki Floyd</span>
+    <span class="footer-copy">&copy; 2026</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
