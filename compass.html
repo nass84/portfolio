@@ -82,6 +82,11 @@
       <h2>One designer, a new category of tool</h2>
       <p class="cs-lead">Compass is Voxpopme's agentic AI research assistant. It takes a question, searches a customer's research projects, analyses video responses and returns a recommendation.</p>
       <p>There was no established design pattern for a tool like this, and as the only designer at Voxpopme I contributed to every layer of the experience: the conversational interface, the onboarding journey, the microcopy, the loading and error states, and the demo content that took it to market.</p>
+
+      <figure class="cs-photo">
+        <img src="images/compass.gif" alt="Compass working through a question to return an answer" loading="lazy" />
+        <figcaption>Compass in action: a question goes in, and it works through the research to return an answer.</figcaption>
+      </figure>
     </section>
 
     <section class="cs-section reveal" id="problem">
@@ -97,6 +102,27 @@
       <h2>Better answers, more friction</h2>
       <p class="cs-lead">Pendo behaviour analysis showed a pattern in first sessions: when Compass opened with a clarifying question before answering, users backed out and returned to plain AI Chat.</p>
       <p>Even when the clarification improved answer quality, the perception was that the tool wasn't ready, and first impressions decide whether a habit forms. This surfaced a core tension in agentic AI design, since better answers often require more input, but more input creates friction. I worked with the product team to test whether delaying or removing the clarifying question changed retention, and the recommendation was to default to a best-effort answer first with an option to refine, rather than a mandatory gate.</p>
+
+      <div class="before-after">
+        <div class="ba-card">
+          <span class="ba-label ba-before">Before &middot; Mandatory gate</span>
+          <ul>
+            <li>Opens with a clarifying question</li>
+            <li>Users must answer before any result</li>
+            <li>They back out and return to plain AI Chat</li>
+            <li>First impression: "not ready", so no habit forms</li>
+          </ul>
+        </div>
+        <div class="ba-card">
+          <span class="ba-label ba-after">After &middot; Answer-first</span>
+          <ul>
+            <li>Best-effort answer straight away</li>
+            <li>Option to refine, for those who want to</li>
+            <li>Nothing blocking the very first result</li>
+            <li>First impression lands, so a habit can form</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="cs-rows">
         <div class="cs-row">
@@ -118,7 +144,18 @@
       <div class="cs-sec-label"><span class="cs-sec-num">4</span> Writing for waiting</div>
       <h2>Loading states and async UX</h2>
       <p class="cs-lead">Compass runs a multi-step reasoning process: it understands the query, searches projects, analyses video responses and prepares a recommendation. That takes time.</p>
-      <p>Loading states are a UX layer most products ignore, and we didn't. I wrote copy for every state in the processing flow, from progress indicators to waiting messages to "come back later" states for longer tasks. The goal was to reduce anxiety, not just fill silence.</p>
+
+      <div class="cs-flow">
+        <div class="cs-flow-step"><div class="cs-flow-n">01</div><h4>Understand</h4><p>Interpret the question being asked.</p></div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step"><div class="cs-flow-n">02</div><h4>Search</h4><p>Find the relevant research projects.</p></div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step"><div class="cs-flow-n">03</div><h4>Analyse</h4><p>Work through the video responses.</p></div>
+        <div class="cs-flow-arrow">&rarr;</div>
+        <div class="cs-flow-step"><div class="cs-flow-n">04</div><h4>Recommend</h4><p>Prepare the answer and its evidence.</p></div>
+      </div>
+
+      <p>Every one of those steps is time the user is waiting, so loading states are a UX layer most products ignore, and we didn't. I wrote copy for every state in the processing flow, from progress indicators to waiting messages to "come back later" states for longer tasks. The goal was to reduce anxiety, not just fill silence.</p>
 
       <div class="callout">
         <p>"Compass is uncovering insights from your data. Stay on this page while we work."</p>
@@ -155,6 +192,20 @@
         <div class="outcome-stat">
           <div class="outcome-big">Depth</div>
           <div class="outcome-label">Returning users came back repeatedly</div>
+        </div>
+      </div>
+
+      <p>Adoption settled into two healthy patterns, which told the business who Compass was really for:</p>
+      <div class="two-col">
+        <div class="info-card">
+          <span class="info-tag">Wide and shallow</span>
+          <h4>Across large accounts</h4>
+          <p>Many people in an organisation, each using Compass lightly. Broad reach, lighter individual depth.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-tag">Narrow and deep</span>
+          <h4>Individual power users</h4>
+          <p>A smaller number using it intensively and often. Narrower reach, but deep engagement.</p>
         </div>
       </div>
     </section>
