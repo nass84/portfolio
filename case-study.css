@@ -224,7 +224,6 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 20px;
-  max-width: 20ch;
 }
 
 .cs-section p:not(.cs-lead) {
